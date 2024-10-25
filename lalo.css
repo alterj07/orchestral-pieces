@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url('Fonts/Cinzel-Black.ttf');
+    src: url('Fonts/Cinzel-Black.ttf') format('embedded-opentype'),
+         url('Fonts/Cinzel-Black.ttf') format('woff2'),
+         url('Fonts/Cinzel-Black.ttf') format('woff'),
+         url('Fonts/Cinzel-Black.ttf') format('truetype'),
+         url('Fonts/Cinzel-Black.ttf') format('svg');
+    font-weight: bold;
+    font-style: bold;
+}
+body{
+    background-color:#4A0000;
+    font-family: Cinzel, cursive;
+}
+p{
+    color:#3C445F;
+}
+a{
+    text-decoration:none;
+    color:#3C445F;
+
+}
+.menu{
+    color:#00FFFF;
+    font-family: Cinzel, cursive;
+    display:block;
+    width:fit-content;
+    height:fit-content;
+    border-radius:60%;
+    border-width:2px;
+    border-color:#FFD700;
+    border-style:solid;
+    background-color:#FFD700;
+    margin-left:5px;
+    margin-right:auto;
+    margin-top:2%;
+    margin-bottom:auto;
+    transition:all 0.4s;
+}
+
+.menu:hover{
+    cursor:pointer;
+    opacity:80%;
+}
+
+body:hover .menu:hover ~ .explanation,
+body:hover .menu:hover + .explanation,
+body:hover .menu:hover ~ * .explanation,
+body:hover .menu:hover + * .explanation {
+    color: #00FFFF;
+}
+
+body:hover .menu:hover ~ .timeframe,
+body:hover .menu:hover + .timeframe,
+body:hover .menu:hover ~ * .timeframe,
+body:hover .menu:hover + * .timeframe {
+    color: #FFD700;
+}
+
+.menu:active{
+    opacity:50%;
+}
+
+.explanation{
+    color:#FFD700;
+    font-size:110%;
+    display:block;
+    margin-top:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:1%;
+    width:75%;
+    height:fit-content;
+    text-align: center;
+    transition:all 0.4s;
+}
+.timeframe{
+    color:#00FFFF;
+    display:block;
+    margin-top:1%;
+    margin-left:45%;
+    margin-right:auto;
+    width:fit-content;
+    height:fit-content;
+    transition: all 0.4s;
+}
+.timeframe:hover{
+    color:#FFD700;
+    cursor:pointer;
+}
+iframe{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}

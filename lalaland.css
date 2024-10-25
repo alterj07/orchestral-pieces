@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Lalaland';
+    src: url('Fonts/UpperEastSide.eot');
+    src: url('Fonts/UpperEastSide.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/UpperEastSide.woff2') format('woff2'),
+         url('Fonts/UpperEastSide.woff') format('woff'),
+         url('Fonts/UpperEastSide.ttf') format('truetype'),
+         url('Fonts/UpperEastSide.svg#Lalaland') format('svg');
+    font-weight: bolder;
+    font-style: bolder;
+}
+body{
+    background-color:#170063;
+    transition: all 0.5s;
+}
+
+p{
+    font-family:Snell Roundhand, cursive;
+    color:#fbfbff;
+}
+a{
+    color:#fbfbff;
+    text-decoration:none;
+}
+.explanation{
+    font-family:'Lalaland', Snell Roundhand, cursive;
+    font-size:250%;
+    color:#fbfbff;
+    text-align:center;
+    display:block;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3%;
+    margin-bottom:100px;
+    transition: color 0.5s;
+}
+
+.menu{
+    font-family:Snell Roundhand, cursive;
+    color:#fbfbff;
+    display:block;
+    width:fit-content;
+    height:fit-content;
+    border-radius:20px;
+    border-color:#fdff03;
+    border-style:solid;
+    margin-left:5px;
+    margin-right:auto;
+    background-color:#3a1c9c;
+    transition:all 0.5s;
+}
+.menu:hover{
+    cursor:pointer;
+    background-color:black;
+    color:#fdff03;
+    opacity:70%;
+    
+}
+
+body:hover .menu:hover ~ .explanation,
+body:hover .menu:hover + .explanation,
+body:hover .menu:hover ~ * .explanation,
+body:hover .menu:hover + * .explanation {
+    color: #fdff03;
+}
+
+
+.menu:hover a{
+    color:lemonchiffon;
+}
+.menu:active{
+    opacity:50%;
+    transition:opacity 0.5s;
+}
+
+iframe{
+    position:relative; top:50px; left:250px;
+    background-color: antiquewhite;
+}
