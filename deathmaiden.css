@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url('Fonts/Cinzel-Black.ttf');
+    src: url('Fonts/Cinzel-Black.ttf') format('embedded-opentype'),
+         url('Fonts/Cinzel-Black.ttf') format('woff2'),
+         url('Fonts/Cinzel-Black.ttf') format('woff'),
+         url('Fonts/Cinzel-Black.ttf') format('truetype'),
+         url('Fonts/Cinzel-Black.ttf') format('svg');
+    font-weight: bold;
+    font-style: bold;
+}
+
 body{
     background-color: black;
 }
@@ -8,6 +20,7 @@ a{
     text-decoration: none;
     color:white;
     transition:all 0.4s;
+    font-family:Cinzel,Helvetica, sans-serif;
 }
 .menu{
     display:block;
@@ -30,6 +43,7 @@ a{
 
 .explanation{
     color:#FFD700;
+    font-family:Cinzel,Helvetica, sans-serif;
 }
 
 iframe{

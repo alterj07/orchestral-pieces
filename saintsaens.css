@@ -20,7 +20,7 @@ a{
     transition:all 0.4s;
 }
 p{
-    font-family:Cinzel;
+    font-family:Cinzel,Helvetica, sans-serif;
 }
 .menu{
     text-align:center;
